@@ -2,8 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueResource from 'vue-resource'
+import BootstrapVue from 'bootstrap-vue';
 
 Vue.use(VueResource);
+Vue.use(BootstrapVue);
 import router from './router/index';
 /* eslint-disable no-new */
 new Vue({

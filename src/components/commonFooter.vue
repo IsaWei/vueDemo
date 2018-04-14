@@ -6,14 +6,19 @@
    <li>1</li>
    <li>2</li>
    <li>3</li>
-   <li>4</li>
+   <li v-on:click="toAlipay">4</li>
     </ul>
 </div>
 </template>
 
 <script>
   export default{
-
+    methods:{
+      toAlipay:function(){
+//        跳转到支付宝模拟页面
+        this.$router.push({path:'/aliPay'})
+      }
+    }
   }
 </script>
 

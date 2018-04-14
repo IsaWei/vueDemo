@@ -26,6 +26,13 @@ const routes = [
         component: Msg
       }
     ]
+  },
+  {
+    path:'/aliPay',
+    component:resolve=>require(['../pages/aliPay.vue'],resolve),
+    meta: {
+      title: 'aliPay'
+    }
   }
 ];
 
